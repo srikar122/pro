@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Login from './components/login.js'
 import SignUp from './components/SignUp.js'
+import Home from './components/Home.js'
 
 function App() {
   let burger=()=>{
@@ -29,7 +30,7 @@ function App() {
         <nav className="nav-bar">
             <ul>
                 <li>
-                    <Link to="" className="active">Home</Link>
+                    <Link to="home" className="active">Home</Link>
                 </li>
                 <li>
                     <Link to="login" >Login</Link>
@@ -41,9 +42,10 @@ function App() {
         </nav>
     </header>
     <Routes>
+    <Route path='' element={<Home/>}/>
+      <Route path='home' element={<Home/>}/>
       <Route path="login" element={<Login/>}/>
       <Route path="signup" element={<SignUp/>}/>
-
     </Routes>
 
     </div>
