@@ -1,0 +1,113 @@
+/*
+font-family: 'Acme', sans-serif;
+font-family: 'Carter One', cursive;
+font-family: 'Ceviche One', cursive;
+font-family: 'Comforter Brush', cursive;
+font-family: 'Cormorant Upright', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Delius', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Itim', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Laila',  sans-serif;
+font-family: 'Mali', cursive;
+font-family: 'Marcellus SC', serif;
+font-family: 'Merienda', cursive;
+font-family: 'Padauk', sans-serif;
+font-family: 'Rancho', cursive;
+font-family: 'Sansita', sans-serif;
+font-family: 'Sofia', cursive; 
+ */
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+header{
+    height: 80px;
+    background-color: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2px;
+    margin:0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover{
+    color: #11101b;
+    background-color: white;
+
+}
+/* .nav-bar ul li a.active{
+    color: #11101b;
+    background-color: white;
+} */
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width:1110px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0px;
+    }
+    .nav-bar{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        background-color: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.srikar{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+
+    }
+    .nav-bar.srikar ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+}

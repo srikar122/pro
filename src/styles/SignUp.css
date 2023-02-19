@@ -1,0 +1,58 @@
+.signUp{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+.signUp-left{
+    flex: 1;
+
+}
+.signUp-right{
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+.signUp-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+}
+.signUp-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /* padding: 1rem; */
+
+}
+.signUp-form-head{
+    margin-left: 17px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.signUp-input{
+    padding: 10px;
+    margin:20px;
+    border:none;
+    border-bottom: 1px solid #333;
+    height: 45px;
+}
+.signUp-button{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius:6px ;
+    border:none;
+    background-color: rgb(55, 152, 179);
+    color: white;
+}
+::placeholder {
+    color: rgb(216, 126, 171);
+  }
